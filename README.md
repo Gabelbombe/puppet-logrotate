@@ -1,6 +1,6 @@
 # Logrotate module for Puppet
 
-[![Build Status](https://secure.travis-ci.org/rodjek/puppet-logrotate.png)](http://travis-ci.org/rodjek/puppet-logrotate)
+[![Build Status](https://secure.travis-ci.org/ehime/puppet-logrotate.png)](http://travis-ci.org/ehime/puppet-logrotate)
 
 A more Puppety way of managing logrotate configs.  Where possible, as many of
 the configuration options have remained the same with a couple of notable
@@ -32,7 +32,7 @@ compressext     - The extention String to be appended to the rotated log files
                   after they have been compressed (optional).
 compressoptions - A String of command line options to be passed to the
                   compression program specified in `compresscmd` (optional).
-copy            - A Boolean specifying whether logrotate should just take a 
+copy            - A Boolean specifying whether logrotate should just take a
                   copy of the log file and not touch the original (optional).
 copytruncate    - A Boolean specifying whether logrotate should truncate the
                   original log file after taking a copy (optional).
@@ -56,7 +56,7 @@ extension       - Log files with this extension String are allowed to keep it
                   after rotation (optional).
 ifempty         - A Boolean specifying whether the log file should be rotated
                   even if it is empty (optional).
-mail            - The email address String that logs that are about to be 
+mail            - The email address String that logs that are about to be
                   rotated out of existence are emailed to (optional).
 mailfirst       - A Boolean that when used with `mail` has logrotate email the
                   just rotated file rather than the about to expire file
@@ -94,7 +94,7 @@ rotate_every    - How often the log files should be rotated as a String.
 size            - The String size a log file has to reach before it will be
                   rotated (optional).  The default units are bytes, append k,
                   M or G for kilobytes, megabytes or gigabytes respectively.
-sharedscripts   - A Boolean specifying whether logrotate should run the 
+sharedscripts   - A Boolean specifying whether logrotate should run the
                   postrotate and prerotate scripts for each matching file or
                   just once (optional).
 shred           - A Boolean specifying whether logs should be deleted with
